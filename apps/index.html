@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Support Templates</title>
+    <meta
+        name="description"
+        content="Reusable support and privacy templates for app-specific pages."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="page-shell page-shell-narrow">
+        <header class="subpage-header">
+            <p class="eyebrow">Reusable Setup</p>
+            <h1>Per-App Support<br>and Privacy Pages</h1>
+            <p class="lede">
+                Use the generic root pages by default. When a specific app needs its own App Store metadata,
+                duplicate the template folder and replace the placeholder values.
+            </p>
+            <div class="hero-actions">
+                <a class="button button-secondary" href="../index.html">Back to Support Hub</a>
+                <a class="button button-secondary" href="./template/">Open Template</a>
+            </div>
+        </header>
+
+        <main class="legal-copy">
+            <section>
+                <h2>Recommended structure</h2>
+                <div class="code-card">
+                    <pre>/apps/
+  /template/
+    index.html
+    privacy.html
+  /your-app-slug/
+    index.html
+    privacy.html</pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Suggested URLs</h2>
+                <ul class="clean-list">
+                    <li>Support: <span class="mono">https://bui-ly.github.io/apps/your-app-slug/</span></li>
+                    <li>Privacy: <span class="mono">https://bui-ly.github.io/apps/your-app-slug/privacy.html</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>How to use</h2>
+                <ul class="clean-list">
+                    <li>Copy <span class="mono">/apps/template/</span> to a new folder named with your app slug</li>
+                    <li>Replace placeholder text such as <span class="mono">APP_NAME</span> and <span class="mono">APP_SUPPORT_EMAIL</span></li>
+                    <li>Update App Store Connect to the new support URL if that app needs its own page</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

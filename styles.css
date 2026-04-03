@@ -214,6 +214,10 @@ h3 {
     margin-top: 18px;
 }
 
+.panel-wide {
+    grid-column: 1 / -1;
+}
+
 .panel {
     padding: 24px;
 }
@@ -232,6 +236,42 @@ h3 {
 .clean-list {
     padding-left: 18px;
     margin-bottom: 0;
+}
+
+.mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.95em;
+}
+
+.panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.code-card {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.code-card pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--text);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.65;
 }
 
 .footer {
@@ -263,7 +303,8 @@ h3 {
 
 @media (max-width: 860px) {
     .hero,
-    .content-grid {
+    .content-grid,
+    .card-grid {
         grid-template-columns: 1fr;
     }
 
