@@ -1,8 +1,8 @@
 # bui-ly.github.io
 
-GitHub Pages site for Word Master: Guess The Word support.
+GitHub Pages site for app support and privacy pages covering current and future apps published by Nguyen Bui Ly.
 
 Published files:
-- `index.html`: support page
-- `privacy.html`: privacy policy
+- `index.html`: generic support page
+- `privacy.html`: generic privacy policy
 - `app-ads.txt`: ad network verification
