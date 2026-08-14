@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /apps/template/
+
+Sitemap: https://bui-ly.github.io/sitemap.xml
