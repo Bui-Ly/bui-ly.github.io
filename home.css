@@ -165,19 +165,6 @@ a {
     background: #363636;
 }
 
-.store-status {
-    display: inline-flex;
-    min-height: 36px;
-    align-items: center;
-    padding: 0 13px;
-    border: 1px solid var(--border);
-    border-radius: 9px;
-    color: var(--muted);
-    background: var(--surface);
-    font-size: 13px;
-    font-weight: 650;
-}
-
 .footer {
     display: flex;
     align-items: center;
